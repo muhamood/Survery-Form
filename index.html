@@ -6,6 +6,65 @@
     <title>SAN-M SURVEY FORM</title>
 </head>
 <body>
-    <h1>SAN-M SURVEY FORM</h1>
+    <div id="container">
+        <div class="layer">
+      <h1 id="title">San-M Tech Specialist Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve our services</p>
+      
+    <form id="survey-form">
+      <div id="content">
+      <label id="name-label">Name
+        <input type="text" id="name"  placeholder="Enter your name" size='62'required><br><br>
+      </label>
+        <label id="email-label">Email
+        <input type="email" id="email" placeholder="Enter your name" size='62'required><br><br>
+      </label>
+        <label id="number-label">Age
+        <input type="number" id="number"  placeholder="Enter your age"  size='50'min="18" max="45" size='30'required>
+      </label><br><br>
+    
+      <label>Which option best describes your current role?</label>
+      <select id="dropdown">
+        <option value="Programmer" >Programmer</option>
+        <option value="Techician">Techician </option>
+        <option value="Senior Dev">Senior Dev</option>
+      </select><br><br>
+      
+      <fieldset>
+     <legend>Would you recommend SAN-M to a friend?</legend>
+        
+     <input type="radio" id="definitely" name="recommend" value="Definitely" checked>
+    <label for="definitely">Definitely</label><br>
+    <input type="radio" id="maybe" name="recommend" value="Maybe">
+    <label for="maybe">Maybe</label><br>
+    <input type="radio" id="not sure" name="recommend" value="Not sure">
+    <label for="not sure">Not sure</label>
+    </fieldset><br>
+      
+      <fieldset>
+      <legend for="name">What would you like to see improved?</legend>
+        <div class="checkbox">
+    <input type="checkbox" id="software" name="software" value="android" >
+    <label for="software"> Software Development</label><br>
+    <input type="checkbox" id="computer" name="computer" value="dell">
+    <label for="computer"> Computer Hardware Repair</label><br>
+    <input type="checkbox" id="phone" name="phone" value="samsung">
+    <label for="phone"> Phone Repair</label><br>
+     <input type="checkbox" id="flashing" name="flashing" value="frp-lock">
+    <label for="flashing"> Flashing and Unlocking</label><br>   
+     <div>     
+    </fieldset>
+      <br>
+      <label for="comments">Any comments or suggestions?</label>
+    
+    <textarea id="comments" name="comments" rows="10" cols="67">
+    Enter your comment here...
+    </textarea><br>
+      <input type="submit" value="Submit" id="submit">
+      
+    <div>
+    </form> 
+    </div>    
+    </div>
 </body>
 </html>
